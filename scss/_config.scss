@@ -1,0 +1,49 @@
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.3;
+}
+
+.cf-el::before,
+.cf-el::after {
+  content: "";
+  display: table;
+}
+.cf-el::after {
+  clear: both;
+}
+
+@font-face {
+  font-family: openiconic;
+  src: url("../fonts/open-iconic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon::before {
+  font-family: openiconic;
+  font-size: 45px;
+  color: $corPrimaria;
+}
+
+.cor-primaria {
+  color: $corPrimaria;
+}
+.cor-secundaria {
+  color: $corSecundaria;
+}
+
+.emp {
+  width: 700px;
+  height: 700px;
+}

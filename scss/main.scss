@@ -1,0 +1,72 @@
+@import "variables";
+@import "config";
+@import "menu";
+@import "footer";
+
+body {
+  margin-left: 7.5rem;
+  margin-top: 4.9375rem;
+  margin-right: 7.5rem;
+  margin-bottom: 4.9375rem;
+}
+
+main {
+  .container {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .cards {
+    font-size: 70px;
+    font-weight: 800;
+    display: flex;
+
+    &__items {
+      text-align: center;
+      padding: 120px;
+      height: 250px;
+      min-width: 600px;
+
+      .secondarycolor {
+        color: $corSecundaria;
+        line-height: 0.5;
+      }
+    }
+  }
+
+  .display-left {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .display-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 10;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .display-left::before {
+    content: "\e035";
+  }
+
+  .display-right::before {
+    content: "\e036";
+  }
+}
+
+.btn {
+  border: none;
+  background-color: white;
+}

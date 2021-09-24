@@ -1,0 +1,47 @@
+.icon-b::before {
+  font-family: openiconic;
+  border-radius: 15px;
+  color: black;
+  font-size: 35px;
+  padding: 15px;
+  float: left;
+  margin: 0 25px 0 0;
+}
+
+.um::before {
+  content: "\e0c2";
+  background-color: $corSecundaria;
+}
+.dois::before {
+  content: "\e065";
+  background-color: $corPrimaria;
+}
+.tres::before {
+  content: "\e0c8";
+  background-color: $corSecundaria;
+}
+.quatro::before {
+  content: "\e02b";
+  background-color: $corPrimaria;
+}
+
+.bottom__items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom__item {
+  margin-right: 25px;
+  flex: 1;
+}
+
+.h1__botton {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.p__botton {
+  font-size: 12px;
+  font-weight: 400;
+}
